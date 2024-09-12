@@ -1,0 +1,106 @@
+@import "../global.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    font-family: Roboto;
+}
+
+.container{
+    width:50vh;
+    height: 50vh;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-primary{
+    background-color: #8885f3;
+    border: none;
+    height: 44px;
+    width: 144px;
+    border-radius: 12px;
+    color: #fffcfc;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.btn-primary:hover{
+    background-color: #adaaff;
+
+}
+
+.btn-continue{
+    background-color: #02bc7d;
+    margin-top: 30px;
+    border: none;
+    height: 36px;
+    width: 150px;
+    border-radius: 12px;
+    color: #fffcfc;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.btn-continue:hover{
+    background-color: #03ac73;
+
+}
+
+
+.card-popup{
+    width: 50vh;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    position: absolute;
+    transition: transform 0.5s, top 0.5s;
+    visibility: hidden;
+
+}
+
+.card-popup-open{
+    visibility: visible;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.card-icon{
+    width: 45px;
+    margin-top: 10px;
+}
+
+.line-header{
+    width:105%;
+    height: 10px;
+    color: #02bc7d;
+    background-color: #02bc7d;
+    border-radius: 12px 12px 0 0;
+    margin-top: -22px;
+    border: none;
+    margin-left: -10px;
+
+}
