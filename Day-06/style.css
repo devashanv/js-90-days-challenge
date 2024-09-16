@@ -1,0 +1,46 @@
+@import "../global.css";
+
+body{
+    background-color: var(--background-color);
+    box-sizing: border-box;
+    font-family:monospace;
+}
+
+.container{
+    width: 80%;
+    height: 50vh;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 90px;
+    color: #fff565;
+    margin-bottom: -10px;
+    text-align: center;
+}
+
+h2{
+    font-size: 48px;
+    color: var(--secondary-color);
+    margin-bottom: -10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-success{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: -5px;
+}
+
+.btn-danger{
+    margin-left: 15px;
+    margin-top: 10px;
+}
