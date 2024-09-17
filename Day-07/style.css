@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "../global.css";
+
+body{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    width:60%;
+    height: 50vh;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+h1{
+    color: rgb(182, 94, 117);
+    font-size: 36px;
+    margin-top: -130px;
+}
+
+.inputpassword{
+    width:80%;
+    height:44px;
+    border: 1px solid #4b4b4a;
+    padding-left: 10px;
+    border-radius: 14px;
+    border: 1px solid rgb(182, 94, 117);
+}
+
+.inputpassword::placeholder{
+    font-size: 14px;
+}
+
+#hintmessage{
+    font-size: 16px;
+    display: none;
+    color: #47d61b;
+}
+
+
