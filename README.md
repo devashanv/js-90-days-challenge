@@ -25,8 +25,9 @@ The JavaScript 90 Days Challenge is a step-by-step lerning journey. Each day com
 2 - Push the daily challenge to the github repository.
 
 3 - Upload a demostarion video and description about challenge as a post in LinkedIn.
-<!-- #### 🔗 LinkedIn Url:
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/ashan-withanarachchi-385593255/) -->
+
+#### 🔗 LinkedIn Url:
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashan-withanarachchi-385593255)
 
 ## ⫼ Goals
 💡 Enhancing knowledge and skills
