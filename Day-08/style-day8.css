@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import "../global.css";
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "SUSE", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+}
+
+.container{
+    width: 40%;
+    padding-left: 80px;
+    margin-top: 200px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input-fiels{
+    width:90%;
+    height: 44px;
+    border-radius: 5px;
+    border-color: none;
+    padding-left: 10px;
+    margin: 10px 0 20px 0;
+    border-style: none;
+}
+
+.input-fiels:focus{
+    outline: rgba(205, 108, 250, 0.16) !important;
+}
+
+.btn-generate{
+    width: 150px;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(205, 108, 250);
+    color: #1E1E1E;
+    font-weight: 600;
+}
+
+.btn-generate:hover{
+    background-color: rgb(194, 77, 248);
+}
+
+h1{
+   color:rgb(210, 118, 253);
+}
+
+.qr-container{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width:90%;
+    height:90%;
+    border-radius: 5px;
+    visibility: hidden;
+}
