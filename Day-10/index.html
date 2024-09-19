@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <title>JS-Challenge-Day-09</title>
+    </head>
+    <body>
+        <h1 class="ok-massage" id="okmessage">Successfully Done!</h1>
+        <section class="container">
+            <section class="form">
+                <section class="header">
+                    <h1 class="header"><span style="color:#f87575">JS</span> <br/>Form Validation</h1>
+                </section>
+                <section class="input-fields">
+                    <input type="email" id="email" class="input" placeholder="enter email address" onkeyup="emailValidate()">
+                    <p class="hint" id="emailerror">Email hint</p>
+                    <section>
+                        <input type="password" id="password" class="input" placeholder="enter password">
+                        <ion-icon name="eye-outline" class="icon" id="visibleicon"></ion-icon>
+                        <ion-icon name="eye-off-outline" class="icon" id="hiddenicon"></ion-icon>
+                    </section>
+                    <p class="hint" id="passworderror">Password hint</p>
+                </section>
+                <section class="footer">
+                    <button class="btn" onclick="loginValidation()">
+                        Submit
+                    </button>
+                    <p class="note">
+                        Js 90 Days Challenge - Day 10
+                    </p>
+                </section>
+            </section>
+            <section class="image-container">
+                <img src="assets/image2.jpg" alt="" class="image">
+            </section>
+        </section>
+    </body>
+</html>

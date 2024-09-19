@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+
+body{
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2a3141;
+}
+
+.container{
+    background-color: #2a3141;
+    width:800px;
+    height:60vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
+    border-radius: 4px;
+    display: flex;
+}
+
+.form{
+    width: 50%;
+    padding-left: 32px;
+}
+
+.image-container{
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+}
+
+.image{
+    width: 100%;
+    height: 450px;
+    border-radius: 4px;
+    object-fit:cover;
+}
+
+.header{
+    font-size: 28px;
+    color: #ebebeb;
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 24px;
+}
+
+.input{
+    width: 80%;
+    height: 34px;
+    border-radius: 4px;
+    border:none;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.2px);
+    -webkit-backdrop-filter: blur(0.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #f1f1f1;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+.input:focus{
+    outline: none;
+    border: 1px solid #ff8787 !important;
+}
+
+.email-valid{
+    width: 80%;
+    height: 34px;
+    border-radius: 4px;
+    border:none;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.2px);
+    -webkit-backdrop-filter: blur(0.2px);
+    border: 1px solid #3fff6f;
+    color: #f1f1f1;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+.email-valid:focus{
+    outline: none;
+    border: 1px solid #3fff6f !important;
+}
+
+.input::placeholder{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.hint{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -2px;
+    visibility: hidden;
+}
+
+.btn{
+    width: 100%;
+    height: 32px;
+    background-color: #fa6363;
+    border: none;
+    border-radius: 4px;
+    color: #f1f1f1;
+    font-weight: 600;
+    margin-top: -50px;
+}
+
+.btn:hover{
+    background-color: #f87575;
+}
+
+.footer{
+    width: 80%;
+    margin-left: 8px;
+}
+
+.note{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+    color: #979797;
+}
+
+.icon{
+    color: #ff8787;
+    font-size: 18px;
+    position: absolute;
+    margin: 11px 5px 0 -30px;
+}
+
+#hiddenicon{
+    color: #dadada;
+    visibility: visible;
+}
+
+#visibleicon{
+    visibility: hidden;
+}
+
+.ok-massage{
+    background-color: #48d66c;
+    color: #424242;
+    font-size: 18px;
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    transition: linear 0.4s;
+    visibility: hidden;
+}
