@@ -44,12 +44,12 @@ function loginValidation(){
         if (inputPassword.value == validPassword){
             document.getElementById("okmessage").style.visibility = "visible";
         }else{
-            passwordError.innerHTML = "Incorrect email address";
+            passwordError.innerHTML = "Incorrect password";
             passwordError.style.color = "#ff4b4b";
             passwordError.style.visibility = "visible";
         }
     }else{
-        emailError.innerHTML = "Incorrect password";
+        emailError.innerHTML = "Incorrect email address";
         emailError.style.color = "#ff4b4b";
         emailError.style.visibility = "visible";
     }
