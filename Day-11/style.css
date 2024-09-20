@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+nav{
+    background-color: #1f1f1f;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 80px;
+    position: relative;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li{
+    padding: 0 10px;
+    color: #d4d4d4;
+}
+
+ul li:hover{
+    padding: 0 10px;
+    color: #fffd77;
+}
+
+.title{
+    margin-top: 8px;
+    font-size: 24px;
+    color: #fcfafa;
+}
+
+.user-profile{
+    font-size:32px;
+    color: rgb(231, 231, 231);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: fill;
+}
+
+.user-profile:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+}
+
+.menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: #252525;
+    width: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 5px;
+    top: -280%;
+    visibility: visible;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.menu-wrap-open{
+    visibility: visible;
+    top: 100%;
+    transition: all 0.5s ease;
+}
+
+/* .menu-wrap-close{
+    top: -250%;
+    visibility: visible;
+    z-index: -1;
+    transition: all 0.5s ease;
+} */
+
+.sub-menu{
+    margin-top: 10px;
+}
+.sub-menu ion-icon {
+   text-align: center;
+   width: 100%;
+}
+
+.sub-menu h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -2px;
+    text-align: center;
+    color: #bebebe;
+}
+
+.link p{
+   color: rgb(202, 202, 202);
+   width: 95%;
+   background-color: #4d4d4d63;
+   padding: 10px 5px;
+   font-size: 14px;
+   border-radius: 5px;
+   padding-left: 10px;
+}
+
+.link p:hover{
+    background-color: #6666667a;
+ }
+
+.sub-link{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+}
+
+hr{
+    height: 0.1px;
+    margin-top: -10px;
+    border-color: #bebebe;
+}

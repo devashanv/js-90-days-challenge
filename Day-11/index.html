@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+        <title>JS-Challenge-Day-11</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <h1 class="title"><span style="font-size: 48px;color: hsl(66, 100%, 71%)">JS</span>Challenge</h1>
+                <section class="nav-links">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </section>
+                <ion-icon name="person-circle-outline" class="user-profile" onclick="expandMenue()"></ion-icon>
+            
+                <!-- sub menue -->
+                 <section class="menu-wrap" id="getmenu">
+                    <section class="sub-menu">
+                        <ion-icon name="person-circle-outline" style="font-size: 54px;"></ion-icon>
+                        <h3>Ashan Withanarachchi</h3>
+                    </section>
+                    <hr/>
+                    <section class="sub-link">
+                        <a href="Dashboard" class="link">
+                            <p>Dashboard <span 
+                                style="margin-left: 135px;"> > </span></p>
+                        </a>
+                        <a href="Projects" class="link">
+                            <p>Projects <span style="margin-left: 143px;"> > </span></p>
+                        </a>
+                        <a href="Certifiation" class="link">
+                            <p>Certifiation <span style="margin-left: 110px;"> > </span></p>
+                        </a>
+                        </a>
+                        <a href="Edit Profile" class="link">
+                            <p>Edit Profile <span style="margin-left: 110px;"> > </span></p>
+                        </a>
+                    </section>
+                 </section>
+            </nav>
+            
+        </section>
+    </body>
+</html>

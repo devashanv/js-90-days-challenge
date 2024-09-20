@@ -43,14 +43,19 @@ function loginValidation(){
     if (inputEmail.value == validEmail){
         if (inputPassword.value == validPassword){
             document.getElementById("okmessage").style.visibility = "visible";
+            emailError.style.visibility = "hidden";
+            passwordError.style.visibility = "hidden";
+
         }else{
             passwordError.innerHTML = "Incorrect password";
             passwordError.style.color = "#ff4b4b";
             passwordError.style.visibility = "visible";
+
         }
     }else{
         emailError.innerHTML = "Incorrect email address";
         emailError.style.color = "#ff4b4b";
         emailError.style.visibility = "visible";
+
     }
 }
