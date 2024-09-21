@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body{
+    background-color: #335c67;
+}
+
+.container{
+    width:50%;
+    /* background-color: aqua; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.progress-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progress-container::before{
+    content: "";
+    background-color: #e09f3e;
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    transform: rotateY(-50%);
+    height: 10px;
+    width: 95%;
+    z-index: -2;
+}
+
+.progress{
+    background-color: blueviolet;
+    position: absolute;
+    top: 13%;
+    left: 0.5%;
+    transform: rotateY(-50%);
+    height: 10px;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+
+.progrss-step{
+    background-color: #eddea4;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #505050;
+    border-radius: 50%;
+}
+.active{
+    background-color: #7bf1a8;
+    border: 1px solid #e0e0e0;
+    padding-top: 7px;
+}
+
+.btn{
+    width: 124px;
+    height: 32px;
+    padding: 6px 8px 10px 8px;
+    border-radius: 24px;
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: #3a3939;
+    cursor: pointer;
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btn#btn_next{
+    background-color: #f8e16c;
+}
+
+.btn#btn_back{
+    background-color: #ffadad;
+}
+
+#btn_back:hover{
+    background-color: #fc8989;
+}
+
+#btn_next:hover{
+    background-color: #f0cf2d;
+}
+
+.ok-massage{
+    background-color: #72e08d;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 20px;
+    width: 70%;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    transition: linear 0.4s;
+    visibility: hidden;
+}
+
