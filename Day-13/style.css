@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    color: rgb(49, 49, 49);
+}
+
+.container{
+    width:50%;
+    background-color: rgb(248, 248, 248);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+    width: 70%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.time{
+    display: flex;  
+    font-size: 64px;
+    margin-top: -50px;
+}
+
+#date{
+    font-size: 24px;
+    margin-bottom: -150px;
+}
