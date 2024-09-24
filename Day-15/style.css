@@ -1,0 +1,58 @@
+
+body{
+    background-color: rgb(46, 47, 48);
+}
+
+.carousel{
+    width: 65%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.carousel section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: -50px;
+    padding: 10px;
+    flex: none;
+}
+ 
+img{
+    width: 550px;
+    height: 550px;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: transform 0.5s;
+}
+
+.btn{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+    background-color: rgb(113, 253, 113);
+    color: rgb(54, 54, 54);
+    border: none;
+    cursor: pointer;
+}
+
+.swiper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
