@@ -1,0 +1,115 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:monospace;
+    color: #fafafa;
+}
+body{
+    background-color: #313131;
+}
+
+.container{
+    width:60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    color: #313131;
+}
+
+.input-range{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.selector{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-93%);
+    z-index: 1;
+    font-size: 14px;
+}
+
+.select-value{
+    background-color: rgb(136, 144, 255);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.select-value::after{
+    content: " ";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(136, 144, 255);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(45deg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.range-slider{
+    -webkit-appearance: none;
+    height: 5px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.range-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 40px;
+    height: 10px;
+    position: relative;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.select-btn{
+    width: 40px;
+    height: 10px;
+    background-color: rgb(136, 144, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.min, .max{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.progress{
+    position: absolute;
+    height: 5px;
+    border-radius: 20px;
+    background-color: rgb(136, 144, 255);
+    width: 50%;
+}
+
+.header{
+    color: #797878;
+    font-size: 36px;
+    padding: 20px;
+    width: 70%;
+    margin: 150px auto 0 auto;
+    text-align: center;
+}
