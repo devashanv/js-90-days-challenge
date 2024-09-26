@@ -1,0 +1,65 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(255, 248, 145);
+}
+
+.container{
+    width:50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.btn-toggle{
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    border-radius: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+
+.btn-toggle::before{
+    content: " ";
+    background-color:rgb(255, 245, 111);
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    top: 50%;
+    left: 38%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease;
+}
+
+#message{
+    text-align: center;
+    margin-top: 150px;
+    color: rgb(119, 119, 119);
+}
+
+.btn-toggle.active::before{
+    content: " ";
+    background-color:rgb(75, 75, 74);
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    top: 50%;
+    left: 53%;
+    transform: translateY(-50%);
+}
