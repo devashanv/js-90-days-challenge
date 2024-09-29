@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --left-shift: 90%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+    font-family: "Exo 2", sans-serif;
+}
+
+.container{
+    width: 800px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text{
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(173, 173, 173);
+}
+
+.text#dynamic-text{
+    color: rgb(252, 255, 88);
+    font-size: 32px;
+}
+
+#icon{
+    font-size: 32px;
+    position: absolute;
+    margin: 10px 10px 0 10px;
+    color: rgb(90, 90, 90);
+}
+
+.text#dynamic-text::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 53%;
+    transform: translate(0, 10%);
+    height: 100%;
+    width: 40%;
+    background-color: rgb(37, 37, 37);
+    border-left: 3px solid rgb(252, 255, 88);
+    animation: animate 5s steps(15) infinite;
+}
+
+/* keyframe animation */
+@keyframes animate{
+    40%, 60%{
+        left: var(--left-shift);
+    }
+    100%{
+        left: 55%
+    }
+} 
