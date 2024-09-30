@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(51, 51, 51);
+}
+
+.header{
+    font-size: 32px;
+    color: rgb(158, 156, 156);
+    letter-spacing: 5px;
+    margin-bottom: 80px;
+}
+
+.container{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+
+.outer-circle{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(7, 7, 7, 0.15), -6px -6px 10px -1px rgba(63, 63, 63, 0.637);
+    padding: 20px;
+}
+
+
+.inner-circle{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(31, 30, 30, 0.637),
+    inset -4px -4px 6px -1px rgba(59, 59, 59, 0.637),
+    -0.5px -0.5px 0px rgba(26, 23, 23, 0.15),
+    0.5px 0.5px 0px rgba(70, 66, 66, 0.15),
+    0px 12px 10px -10px rgba(32, 32, 32, 0.05);
+}
+
+.btn-refresh{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(86, 86, 87);
+    box-shadow: 6px 6px 10px -1px rgba(7, 7, 7, 0.15), -6px -6px 10px -1px rgba(63, 63, 63, 0.637);
+    margin-top: 80px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: rgb(175, 176, 177);
+}
+
+.btn-refresh:hover{
+    background: rgb(110, 110, 110);
+    color: rgb(29, 29, 29);
+    cursor: pointer;
+
+}
+
+#percentage{
+    font-size: 28px;
+    color: rgb(110, 110, 110);
+    letter-spacing: 1px;
+}
+
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: animate 2s linear forwards;
+
+}
+
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes animate {
+    100%{
+        stroke-dashoffset: 118;
+    }
+    
+}
