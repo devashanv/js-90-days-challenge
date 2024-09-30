@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    background: url("assets/image.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#heart{
+    position: absolute;
+    color: rgb(253, 58, 58);
+    font-size: 38px;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#heart.active{
+    visibility: visible;
+    animation: animate 0.8s linear forwards;
+}
+
+@keyframes animate{
+    30%{
+        opacity: 1;
+        font-size: 80px;
+    }
+    50%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    70%{
+        opacity: 1;
+        font-size: 70px;
+    }
+    80%{
+        opacity: 1;
+        font-size: 60px;
+    }
+    90%{
+        opacity: 1;
+        font-size: 60px;
+    }
+}
