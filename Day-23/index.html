@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <script  defer src="script.js"></script>
+        <title>JS-Challenge-Day-23</title>
+    </head>
+    <body>
+        <section class="container">
+            <section class="search-bar">
+                <!-- search bar -->
+                <section class="search">
+                    <input type="text" id="search_bar" placeholder="search text.." class="input-search" onkeyup="srchVal(event)">
+                </section>
+
+                <!-- search button -->
+                <button class="btn-search">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <span>Search</span>
+                </button>
+            </section>
+
+            <section>
+                <!-- suggestions -->
+                <ul class="sugges-list">
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">JavaScrip Variables</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">React 19 Features</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">React courses</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">Machine Learning</a>
+                    </li>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <a href="#">Machine Learning courses</a>
+                    </li>
+                </ul>
+            </section>
+        </section> 
+    </body>
+</html>
