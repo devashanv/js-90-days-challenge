@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body{
+    background-color: rgb(248, 248, 248);
+}
+
+.container{
+    width: 750px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.inp-text{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #353535;
+    resize: none;
+}
+
+.inp-text::placeholder{
+    font-size: 16px;
+    color: #aaacad;
+}
+
+.save-option{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.save-option .file-name,
+.file-type{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.file-name{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: -10px;
+}
+
+.file-type{
+    display: flex;
+    gap: 18px; 
+}
+
+.save-option label{
+    font-size: 18px;
+    color: #353535;
+    font-weight: 500;
+    display: flex;
+    vertical-align: middle;
+}
+
+.save-option .inp-name,
+.type-menu{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.btn-save{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    background-color: #fa9543;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin: 20px auto 0 auto;
+
+}
+
+.btn-save:hover{
+    background-color: #fc8c30;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #442104;
+}

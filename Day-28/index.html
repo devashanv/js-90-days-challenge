@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-28</title>
+    </head>
+    <body>
+        <section class="container">
+            <section class="wrapper">
+                <h1>Save Text File Into Custome Type</h1>
+                <!-- input text area -->
+                <textarea id="input_text" class="inp-text" placeholder="text here.."></textarea>
+
+                <!-- save area -->
+                <section class="save-option">
+                    <!-- file name -->
+                    <section class="option file-name">
+                        <label for="">File name</label>
+                        <input type="text" id="file_name" class ="inp-name" placeholder="file name here"/>
+                    </section>
+
+                    <!-- file type -->
+                    <section class="option file-type">
+                        <label for="">Save as type</label>
+                        <section class="select-menu">
+                            <select class="type-menu">
+                                <option value="text/plain">Text File (.txt)</option>
+                                <option value="application/msword">Document File (.doc)</option>
+                                <option value="application/vnd.ms-powerpoint">Powerpoint File (.ppt)</option>
+                                <option value="application/vnd.ms-excel">Excel File (.xls)</option>
+                                <option value="text/html">HTML File (.html)</option>
+                                <option value="text/javascript">JS File (.js)</option>
+                            </select>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- btn save -->
+                 <button class="btn-save" id="btn_save">Save File</button>
+            </section>
+        </section>
+    </body>
+</html>
+
+
