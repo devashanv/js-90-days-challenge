@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-31</title>
+    </head>
+    <body>
+        <h1 class="title">Guess The Number</h1>
+        <section class="container">
+            <!-- instruction area -->
+            <section class="intro-area">   
+                <p>Number will be between 1 - 100.</p>
+                <p>You have 10 Tries to guess.</p>
+                <p>Time to guess It!</p>
+
+                <!-- status message -->
+                <section class="win-status">
+                    <p id="status_message">You Are Won!</p>
+                </section>
+            </section>
+
+            <!-- game area -->
+            <section class="game-area">
+                <!-- user input -->
+                <h2 class="hint"></h2>
+                <section class="guess-area">
+                    <input type="number" id="inp_number" class="number" min="0" max="100" maxlength="2" required />
+                    <button class="btn-try"  onclick="guessNumber()">Try</button>
+                </section>
+                <!-- details area -->
+                <section class="footer">
+                    <section class="tries">
+                        <p style="font-weight: 600;">Remaining Try</p>
+                        <p id="chance_value" class="chance"></p>
+                    </section>
+                    <section class="guess-time">
+                        <h4>Guessed Numbers</h4>
+                        <h4 id="guessed_no"></h4>
+                    </section>
+                </section>
+           </section>
+        </section>
+    </body>
+</html>
+
+
+
