@@ -7,7 +7,7 @@ const btnTry = document.querySelector(".btn-try");
 const hint = document.querySelector(".hint");
 
 //get random number
-var number = 15; //Math.floor(Math.random()*100 + 1);
+var number = 35; //Math.floor(Math.random()*100 + 1);
 var guesses = 10;
 var userInputs = [];
 

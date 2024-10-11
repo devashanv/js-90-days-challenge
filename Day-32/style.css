@@ -1,0 +1,71 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.quote-container{
+    width: 80%;
+    height: auto;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: rgb(42, 44, 44);
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+}
+
+.quote-container .quote{
+    color: rgb(204, 199, 199);
+    line-height: 30px;
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 70px;
+}
+
+.quote-container #author{
+    color: rgb(145, 145, 145);
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn-new{
+    padding: 15px 100px;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: rgb(255, 252, 75);
+    color: rgb(44, 43, 43);
+    font-weight: 600;
+    border: none;
+    position: absolute;
+    align-content: end;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 1px solid rgb(187, 187, 182);
+    cursor: pointer;
+    position: fixed;
+    
+}
+
+.btn-new:hover{
+    border: 1px solid rgb(187, 187, 182);
+    background-color: rgb(255, 251, 33);
+}
