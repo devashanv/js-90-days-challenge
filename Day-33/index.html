@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-33</title>
+    </head>
+    <body>
+        <section class="container">
+            <section class="card-tmp">
+                <h1 class="title">Celsius & Fahrenheit Indicator</h1>
+                <hr />
+                <!-- celsius -->
+                <section class="celsius">
+                    <p>Celsius</p>
+                    <input type="number" id="inp_celsius" class="celsius-value" placeholder="celsius value" oninput="toFahren()" />
+                </section>
+                <!-- fahrenheit -->
+                <section class="fahrenheit">
+                    <p>Fahrenheit</p>
+                    <input type="number" id="inp_fahren" class="fahren-value" placeholder="fahrenheit value" oninput="toCelsius()"/>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
