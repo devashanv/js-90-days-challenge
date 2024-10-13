@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(139, 79, 235) 0%, rgb(92, 168, 255) 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    width: 650px;
+    height: auto;
+    padding: 3em 5em;
+    margin-top: 50px;
+}
+
+.file-upload{
+   display: none;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: rgb(68, 68, 68);
+    width: 50%;
+    border-radius: 0.2em;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1em 0.5em;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.file-upload::hover{
+    background-color: rgb(24, 22, 22);
+}
+
+label ion-icon{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#files_container{
+    text-align: center;
+    margin-top: 3em;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: rgb(255, 251, 39);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 20px;
+}
+
+ul li{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 1em 1.5em;
+    border-radius: 0.2em;
+    color: rgb(38, 39, 39);
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    font-weight: 500;
+}
