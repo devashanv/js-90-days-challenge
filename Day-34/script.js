@@ -7,7 +7,7 @@ const fileCount = document.getElementById("files_container");
 inpFile.addEventListener("change", () => {
     //get no of files selected
     fileList.innerHTML = "";
-    fileCount.innerText = `${inpFile.files.length} Files Selected`;
+    fileCount.innerHTML = `${inpFile.files.length} - Files Selected`;
 
     //get selected files details & assign to UL
     for (file of inpFile.files){
