@@ -17,3 +17,14 @@ body{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 50%;
 }
+
+h1{
+    text-align: center;
+    margin-top: 5em;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    position: absolute;
+    color: #8a8672;
+    font-size: 35px;
+}
