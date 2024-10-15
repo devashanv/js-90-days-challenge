@@ -48,3 +48,9 @@ img{
     padding-top: 0px;
     cursor: pointer;
 }
+
+h1{
+    font-size: 30px;
+    color: rgb(29, 29, 26);
+    font-weight: 800;
+}
