@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-37</title>
+    </head>
+    <body>
+        <h1>RGB Color Generator</h1>
+        <section class="container">
+            <!-- RGB seletor -->
+            <section class="rgb-selector">
+                <section class="wrapper">
+                    <span>R</span>
+                    <input type="range" id="r_value" class="red" min="0" max="255" value="0" oninput="generateColor()"/>
+                </section>
+                <section class="wrapper">
+                    <span>G</span>
+                    <input type="range" id="g_value" class="green" min="0" max="255" value="0" oninput="generateColor()"/>
+                </section>
+                <section class="wrapper">
+                    <span>B</span>
+                    <input type="range" id="b_value" class="blue" min="0" max="255" value="0" oninput="generateColor()"/>
+                </section>
+
+                <!-- color code -->
+                <span id="rgb_code">rgb(0,0,0)</span>
+            </section>
+
+            <!-- color box -->
+            <section class="rgb-color">
+                <section class="color-box" id="color_box">
+                    
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
