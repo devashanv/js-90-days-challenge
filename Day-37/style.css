@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+    color: rgb(43, 43, 43);
+    margin-top: 5em;
+}
+
+.container{
+    background-color: #ffffff;
+    width: 750px;
+    display: flex;
+    padding: 1em;
+    border-radius: 0.5em;
+    gap: 1em;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    position: absolute;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.rgb-color{
+    width: 30%;
+    height: 13em;
+    margin-top: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rgb-selector{
+    width: 70%;
+    border-radius: 0.2em;
+    display: grid;
+    place-items: center;
+}
+
+.color-box {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 0.1em;
+    padding: 1em 1em;
+}
+
+.wrapper span{
+    text-align: center;
+    align-content: center;
+    color: #2e2d2d;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 45px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.wrapper .red,
+.green,
+.blue{
+    background-color: aqua;
+    width: 100%;
+    cursor: pointer;
+}
+
+#rgb-code{
+    padding: 0.5em 0.5em;
+    width: 10em;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
