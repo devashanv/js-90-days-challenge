@@ -9,7 +9,7 @@ body{
     background-color: rgb(61, 61, 61);
     display: grid;
     place-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .container{
@@ -23,7 +23,7 @@ body{
 }
 
 .container .swap-container{
-    background-color: aliceblue;
+    background-color: rgb(87, 88, 90);
     width: 40%;
     height: 25em;
     border-radius: 0.5em;
@@ -33,6 +33,7 @@ body{
     text-align: center;
     justify-items: center;
     align-content: center;
+    cursor: pointer;
 }
 
 .container .swap-direction{
@@ -41,10 +42,14 @@ body{
     background-color: rgb(236, 244, 252);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 0.5em;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    font-weight: 600;
 }
 
 h1{
-    margin: 1em 0 -1em 0;
+    margin: 2em 0 -1.1em 0;
     color: rgb(193, 145, 255);
     font-weight: 800;
     text-align: left;
