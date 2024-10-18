@@ -13,19 +13,19 @@
         <section class="container">
             <section class="input-field">
                 <div class="mb-3">
-                    <label for="inp_foot_length" class="form-label">Foot Length (inches)</label>
+                    <label for="inp_foot_length" class="form-label">Foot Length (cm)</label>
                     <input type="number" class="form-control" id="inp_foot_length" placeholder="enter foot length">
                 </div>
                 <div class="mb-3">
-                    <label for="inp_foot_width" class="form-label">Foot Width  (inches)</label>
+                    <label for="inp_foot_width" class="form-label">Foot Width  (cm)</label>
                     <input type="number" class="form-control" id="inp_foot_width" placeholder="enter foot width">
                 </div>
 
-                <button type="button" class="btn btn-dark" id="btn_get_size">Get Size</button>
+                <button type="button" class="btn btn-dark" id="btn_get_size" onclick="getShoeSize()">Get Size</button>
             </section>
 
-            <section class="output">
-                out put
+            <section>
+               <h4 class="output" id="output_text"></h4>
             </section>
         </section>
     </body>
