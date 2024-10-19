@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-39</title>
+    </head>
+    <body>
+        <!-- header section -->
+        <section class="heder">
+            <h1>Pangram Checker</h1>
+            <p>Pangram is a sentence includes all the letters of the Alphabet</p>
+        </section>
+
+        <!-- content section -->
+        <section class="container">
+            <div class="mb-3">
+                <label for="inp_sentence" class="form-label">Your Sentence</label>
+                <textarea class="form-control" id="inp_sentence" rows="3" placeholder="enter sentense here.."></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="btn_check">Check Pangrams</button>
+        </section>
+
+        <!-- output section -->
+        <section>
+            <h2 class="output">Is a pangrasm</h2>
+        </section>
+    </body>
+</html>
