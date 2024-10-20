@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a221f;
+}
+
+.container{
+    margin-top: 100px;
+    display: flex;
+
+}
+
+input.form-control{
+    width: 100%;
+}
+
+.form-label{
+    font-weight: 500;
+    color: rgb(91, 255, 127);
+}
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.heder{
+    display: flex;
+    flex-direction: column;
+    color: rgb(141, 141, 141);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.output{
+    width: 50%;
+    color: aliceblue;
+    padding: 50px 50px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.field{
+    width: 50%;
+}
+
+#output_txt{
+    font-size: 80px;
+    color: rgb(91, 255, 127);
+    visibility: hidden;
+}
+
+#time{
+    color: rgb(186, 187, 189);
+    font-size: 28px;
+    visibility: hidden;
+}
