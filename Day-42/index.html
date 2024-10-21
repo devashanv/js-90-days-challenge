@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-42</title>
+    </head>
+    <body>
+        <section class="container-fluid">
+            <!-- headre section -->
+            <section class="header">
+                <h1>Sentence Sorting Program</h1>
+                <p>Creates order of each word minimum length to max length, then Sorting each word nto Alphabet order.</p>
+            </section>
+            <section class="field">
+                <div class="mb-3">
+                    <label for="inp_sentence" class="form-label">Your Sentence</label>
+                    <input type="email" class="form-control" id="inp_sentence" placeholder="enter your sentence here..">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="sortSentence()">Sort</button>
+            </section>
+
+            <!-- output -->
+            <section class="output">
+                <h3 id="output_txt"></h3>
+            </section>
+        </section>
+    </body>
+</html>
