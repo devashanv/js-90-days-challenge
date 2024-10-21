@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffec83;
+}
+
+.container-fluid{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 50px;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.header p{
+    color: rgb(53, 52, 50);
+    margin-top: -15px;
+    font-size: 14px;
+}
+
+.header h1{
+    margin-bottom: 20px ;
+    font-weight: 700;
+    color: #494947;
+}
+
+.output{
+    width: 100%;
+    display: none;
+}
+
+#output_txt{
+    font-size: 24px;
+    color: rgb(53, 53, 53);
+    text-align: center;
+    background-color: rgb(255, 248, 156);
+    padding: 10px 10px;
+}
