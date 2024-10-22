@@ -28,7 +28,7 @@ btnCheck.addEventListener("click", () => {
             else{
                 //display answer
                 txtOutput.innerText = `${inpWord} is not a Palindrome`;
-                txtOutput.style.backgroundColor = "#e9e062";
+                txtOutput.style.backgroundColor = "#c96b00bd";
                 txtOutput.style.visibility = "visible";
                 break;
             }
@@ -50,7 +50,7 @@ function reverseArr(arr){
         reversedArr.push(arr[j-1]);
     }
 
-    return reversedArr
+    return reversedArr;
 }
     
 
