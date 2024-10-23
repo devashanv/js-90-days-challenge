@@ -30,3 +30,8 @@ function customeAPGenerator(){
     outputTxt.innerText = stonesArr.toString();
     outputTxt.style.display = "block";
 }
+
+
+function hiddeOutput(){
+    outputTxt.style.display = "none";
+}
