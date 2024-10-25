@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-46</title>
+    </head>
+    <body>
+        <section class="container">
+             <!-- headre section -->
+             <section class="header">
+                <h1>Plan Your Meals</h1>
+                <p>Maximum meals per day is 2</p>
+                <p>Minimum calories requiremnts is 100</p>
+            </section>
+            <section class="field">
+                <div class="mb-3">
+                    <label for="inp_meals_per_day" class="form-label">Meals Per Day</label>
+                    <input oninput="hiddeOutput()" type="number" class="form-control" id="inp_meals_per_day" placeholder="ex: 1" min="1"  max="2">
+                </div>
+
+                <div class="mb-3">
+                    <label for="inp_total_cal" class="form-label">Total calories</label>
+                    <input oninput="hiddeOutput()" type="email" class="form-control" id="inp_total_cal" placeholder="ex: 400">
+                </div>
+
+                <div class="mb-3">
+                    <label for="inp_over_limit" class="form-label">Overflow Limit</label>
+                    <input oninput="hiddeOutput()" type="email" class="form-control" id="inp_over_limit" placeholder="ex: 50">
+                </div>
+
+                <button type="button" class="btn btn-dark" onclick="calculateMealPlan()">Generate Meals</button>
+            </section>
+
+            <!-- output -->
+            <section>
+                <h3 id="output"></h3>
+            </section>
+        </section>
+    </body>
+</html>
