@@ -1,0 +1,44 @@
+.container{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-color: #ffffff;
+    padding: 30px 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.header{
+    margin-bottom: 20px;
+}
+
+.header p{
+    color: rgb(53, 52, 50);
+    margin-top: -15px;
+    font-size: 14px;
+}
+
+.header h1{
+    margin-bottom: 20px ;
+    font-weight: 700;
+    color: #ff845e;
+}
+
+.output{
+    width: 100%;
+    height: 50px;
+}
+
+#output{
+    font-size: 22px;
+    color: rgb(53, 53, 53);
+    text-align: left;
+    background-color: #ff9676;
+    padding: 20px 10px;
+    display: none;
+}
