@@ -36,6 +36,13 @@ inpDigits.forEach((inpDigit, index) => {
             });
         }
 
+        //set button visibility
+        if (!inpDigits[3].disabled && inpDigits[3].value !== ""){
+            btnVerify.classList.add("disabled");
+        }else{
+            btnVerify.classList.remove("disabled");
+        }
+
 
     });
 });
