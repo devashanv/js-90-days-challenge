@@ -2,6 +2,8 @@
 const inpDigits = document.querySelectorAll("input");
 const btnVerify = document.getElementById("btn_verify");
 const msg = document.getElementById("msg");
+const iconWait = document.getElementById("icon_wait");
+const iconDone = document.getElementById("icon_done");
 
 console.log(inpDigits, btnVerify);
 
@@ -57,5 +59,7 @@ window.addEventListener("load", () => {
 
 //btn function
 btnVerify.addEventListener("click", () => {
-    msg.innerText = "Verified Successfull!"
+    msg.innerText = "Verified Successful!";
+    iconWait.style.visibility = "hidden";
+    iconDone.style.visibility = "visible";
 });
