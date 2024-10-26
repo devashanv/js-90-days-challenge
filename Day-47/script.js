@@ -37,7 +37,7 @@ inpDigits.forEach((inpDigit, index) => {
         }
 
         //set button visibility
-        if (!inpDigits[3].disabled && inpDigits[3].value !== ""){
+        if (inpDigits[3].value === ""){
             btnVerify.classList.add("disabled");
         }else{
             btnVerify.classList.remove("disabled");
@@ -45,4 +45,11 @@ inpDigits.forEach((inpDigit, index) => {
 
 
     });
+});
+
+
+//load event settings
+window.addEventListener("load", () => {
+    btnVerify.classList.add("disabled");
+    inpDigits[0].focus();
 });
