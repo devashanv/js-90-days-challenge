@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222222;
+}
+
+.container{
+    width: 300px;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inp-digits{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.form-control{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.form-control:focus{
+    box-shadow: rgba(165, 255, 104, 0.16) 0px 1px 4px;
+    border: 1px solid rgb(110, 255, 153);
+}
+
+.form-control::-webkit-outer-spin-button,
+.form-control::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #11a75c;
+    border: none;
+}
+
+.header-icon{
+    background-color: #17e980;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto 10px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#icon_wait,
+#icon_done{
+    font-size: 50px;
+    position: absolute;
+}
+
+#icon_done{
+    visibility: hidden;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
