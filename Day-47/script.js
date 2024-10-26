@@ -1,6 +1,7 @@
 //initialize
 const inpDigits = document.querySelectorAll("input");
 const btnVerify = document.getElementById("btn_verify");
+const msg = document.getElementById("msg");
 
 console.log(inpDigits, btnVerify);
 
@@ -52,4 +53,9 @@ inpDigits.forEach((inpDigit, index) => {
 window.addEventListener("load", () => {
     btnVerify.classList.add("disabled");
     inpDigits[0].focus();
+});
+
+//btn function
+btnVerify.addEventListener("click", () => {
+    msg.innerText = "Verified Successfull!"
 });
