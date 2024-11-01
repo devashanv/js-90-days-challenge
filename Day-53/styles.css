@@ -1,0 +1,81 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: #0b0d0e;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 350px;
+    background-color: #1592ff;
+    border-radius: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container.active{
+    height: 20px;
+    width: 500px;
+}
+
+.container:hover{
+    background-color: #0278df;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: #f4f4f5;
+}
+
+.container.active::before{
+    animation: btn 6s ease-in-out forwards;
+}
+
+@keyframes btn {
+    100%{
+        left: 0%;
+    }
+}
+
+.container .content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+
+
+.container.active .content{
+    transform: translateY(60px);
+}
+
+.content ion-icon,
+.content span{
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.content span{
+    font-size: 30px;
+    margin-left: 8px;
+    font-weight: 500;
+}
