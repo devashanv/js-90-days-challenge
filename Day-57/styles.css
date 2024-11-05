@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+p{
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px;
+    cursor: pointer;
+}
+
+section.mouse-focus{
+    --Xpos: 50vw;
+    --Ypos: 50vh;
+}
+
+section.mouse-focus::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    background: radial-gradient(
+        circle 9em at var(--Xpos) var(--Ypos), 
+        rgba(255, 229, 85, 0.37),
+        rgba(0,0,0,1)
+    );
+}
