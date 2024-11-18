@@ -1,0 +1,100 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202020;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px 50px;
+}
+
+.title{
+    color: rgb(255, 235, 120);
+    margin: 80px 0 10px 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.item-title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #929292;
+    margin-top: 20px;
+    background-color: #92929233;
+}
+
+.item-description{
+    padding: 0px 20px;
+    text-align: justify;
+    color: #cccccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.5s ease;
+}
+
+.btn{
+    width: 100%;
+}
+
+.icon{
+    padding-top: 10px;
+    rotate: 0deg;
+}
+
+.bottom-line{
+    width: 100%;
+    margin: 5px auto 0 auto;
+}
+
+.item.active .item-description{
+    max-height: 400px;
+}
+
+.item-title:hover{
+    background-color: #92929270;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: 700;
+    color: #359dff;
+}
+
+.form-control::-webkit-outer-spin-button,
+.form-control::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+
+.form-control:focus{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid rgb(34, 34, 34);
+}
+
+p{
+    font-size: 18px;
+    font-weight: 600;
+    color: #929292;
+}
+
+.form-label{
+    font-weight: 600;
+}
