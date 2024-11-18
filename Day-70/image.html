@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example Assets</title>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img,video,embed,p{
+                width: 1000px;
+                height: 600px;
+                margin: 20px auto;
+                object-fit: cover;
+            }
+
+            div{
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding: 50px 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <video controls>
+                <source src="assets/demo.mp4" type="video/mp4">
+            </video>
+            <img src="assets/img.jpg" alt="">
+
+            <embed src="assets/sample.pdf" type="application/pdf" width="100%" height="600px">
+            <p>
+                <a href="assets/sample.pdf" target="_blank">Pdf Address</a>
+            </p>
+        </div>
+
+    </body>
+</html>
