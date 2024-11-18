@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-70</title>
+    </head>
+    <body>
+        <section class="container">
+             <!-- headre section -->
+             <section class="header">
+                <h1>Download Any Files</h1>
+                <p>Copy & paste the link of the file you want to download into the below text box</p>
+            </section>
+            <section class="field">
+                <div class="mb-3">
+                    <label for="inp_url" class="form-label">File Link</label>
+                    <input type="text" class="form-control" id="inp_url" placeholder="ex: https://www.example.com/image.jpg" min="1"  max="2">
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btn_download">Download</button>
+            </section>
+        </section>
+    </body>
+</html>
