@@ -253,24 +253,7 @@ function objectConstructor(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//call to functions
 objetDefinition();
 objetProperties();
 objectConstructor();
