@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1b;
+}
+
+.header h1{
+    margin-top: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #bfc0c0;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+section.container{
+    width: 70%;
+    margin: 50px 0;
+    padding: 20px 20px;
+}
+
+div.row{
+    background-color: rgb(43, 43, 43);
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    margin: 20px 0;
+}
+
+h2.method-name{
+    font-size: 22;
+    font-weight: 600;
+    color: #fff48d;
+    padding: 10px 0;
+}
+
+p.description{
+    font-size: 18px;
+    color: #afafaf;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+p.syntax{
+    background-color: #ffffff;
+    font-family: "Source Code Pro", serif;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin: 10px 10px 20px 10px;
+    line-height: 28px;
+    border-left: 8px solid #868686;
+    border-right: 8px solid #868686;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+p.output{
+    padding: 5px 5px;
+    color: #fff8b8;
+}
+
+.code-pd{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-family: "Source Code Pro", serif;
+}
+
+.comment{
+    font-size: 14px;
+    color: #868686;
+    font-family: "Source Code Pro", serif;
+}
