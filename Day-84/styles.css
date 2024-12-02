@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section.container{
+    background-color: rgb(255, 255, 255);
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 25px 15px 10px 15px;
+   
+}
+
+section.caculator{
+    border-radius: 8px;
+    
+}
+
+.form-control{
+    text-align: right;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.form-control:disabled{
+    background-color: transparent;
+    color: #313131;
+}
+
+.btn{
+    width: 65px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.cal-row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+h1{
+    color: rgb(110, 110, 110);
+}
+
+.btn-operator{
+    background-color: #000000;
+}
