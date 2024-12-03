@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>JS-Challenge-Day-85</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <h1>Personal Budget Management App</h1>
+        <div class="container app">
+            <!-- set new budget -->
+            <div class="budget">
+                <h4>Set Your Budget</h4>
+                <div style="display: flex;gap:10px">
+                    <input class="form-control" type="text" placeholder="enter your budget amount"  id="inp_bidget" style="width: 70%;">
+                    <button type="button" class="btn btn-dark" style="width: 30%;" id="btn_set_budget">Set Budget</button>
+                </div>
+            </div>
+
+            <!-- expenses & incomes -->
+            <div class="budget-actions">
+                <div class="expences">
+                    <h4>New Expense</h4>
+                    <div style="display: flex;flex-direction: column;gap:10px;">
+                        <input class="form-control" type="text" placeholder="enter expenses description" id="inp_exp_info">
+                        <input class="form-control" type="text" placeholder="enter expenses amount" id="inp_exp_amount">
+                        <button type="button" class="btn btn-outline-dark" id="btn_add_expense">Add Expense</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="budget-display">
+                <h2 class="budget-txt">Your buget is: Rs.<span id="rupee_value"></span></h2>
+            </div>
+
+            <!-- budget details -->
+            <div class="container" id="tbl_budget">
+                <div class="row">
+                    <div class="col">
+                        <h6 style="font-weight: 600;">Description</h6>
+                    </div>
+                    <div class="col">
+                        <h6 style="font-weight: 600;">Amount</h6>
+                    </div>
+                    <div class="col">
+                        <h6 style="font-weight: 600;">Balance</h6>
+                    </div>
+                </div>
+                <div id="tble_data">
+
+                </div>
+            </div>
+
+            <div class="budget-error">
+                <h2 class="budget-txt">Cannot make expenses, Budget exceeded</h2>
+            </div>
+        </div>
+    </body>
+</html>
