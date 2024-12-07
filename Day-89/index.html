@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css"/>
+        <script defer src="script.js"></script>
+        <title>JS-Challenge-Day-89</title>
+    </head>
+    <body>
+        <section class="header">
+            <h1>Expression Pasing in Data Structure</h1>
+        </section>
+        <section class="container">
+             <!-- headre section -->
+            <section class="header">
+                <h3 class="sub-title">Infix covert into Postfix</h3>
+                <p>
+                    Infix notation is the human readability and most common way of using in day to day activities. Infix notation follows the rule of operator place in between operands. ex: a + b,  c / d
+
+                </p>
+
+                <p>
+                    Postfix notation is a method of presenting expression operator after its operands. ex:  a b +, c d /. Also, this called as Reverse Polish notation.
+                </p>
+            </section>
+            <section class="field">
+                <div class="mb-3">
+                    <label for="inp_expression" class="form-label">Enter infix expression(without spacing)</label>
+                    <input oninput="hiddeOutput()" type="text" class="form-control" id="inp_expression" placeholder="ex:5+(6-2)">
+                </div>
+
+                <button type="button" class="btn btn-dark" id="btn_convert">Convert</button>
+            </section>
+
+            <!-- output -->
+            <section>
+                <h3 id="output"></h3>
+            </section>
+        </section>
+    </body>
+</html>
