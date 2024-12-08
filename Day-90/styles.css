@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    background-image: url("assets/bg-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+}
+
+.card{
+    margin-top: 200px;
+    width: 400px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 20px 10px;
+}
+
+.search-box{
+    display: flex;
+    gap: 10px;
+}
+
+#inp_city,
+.btn{
+    border-radius: 16px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bx{
+    font-weight: 600;
+}
+
+.details-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    padding: 5px 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(55, 56, 56);
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+
+.weather{
+    display: flex;
+    justify-content: space-around;
+    font-size: 70px;
+    padding: 0px 20px;
+    gap: 15px;
+}
+
+.value{
+    font-size: 70px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.status{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+}
+
+.location{
+    font-weight: 800;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    color: rgb(182, 183, 184);
+}
+
+.humidity{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.wind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    width: 50%;
+}
+
+.humidity i,
+.wind i{
+    font-size: 32px;
+}
+
+.humidity-value,
+.wind-speed{
+    margin-top: -20px;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+#img-icon{
+    width: 90px;
+}
